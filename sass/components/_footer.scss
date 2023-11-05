@@ -1,0 +1,177 @@
+
+@use '../abstracts' as a;
+
+footer {
+    background-color: #000;
+    grid-auto-rows: min-content;
+
+    h2{ color: a.$primary-color;}
+    
+   
+
+    .footerNav {
+        font-size: .9rem;
+        margin-top: .8;
+        margin-left: 3.9rem;
+
+        ul li {
+            padding-bottom: .5rem;
+            list-style-type: none;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .footer-icons { 
+        text-align: center;
+        h2{ 
+            font-size: .7rem;
+            margin-top: 2rem;
+        }
+        img {
+        width: 2rem;
+        height: 2rem;
+        margin: .5rem .5rem .5rem 0;
+        }
+    }
+
+    form {
+        display: inline-flex;
+        margin-left: 3rem;
+
+        #sub { 
+            width: 1.5rem;
+        }
+    }
+
+    .form h2 {
+        padding: 1rem 0 .4rem 0;
+        font-size: .9rem;
+        text-align: center;
+    }
+}
+
+#copyright {
+    color: #fff;
+    background-color: #131313;
+    text-align: center;
+    padding: 7px;
+    font-size: .7rem;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        background-color: #000;
+        grid-auto-rows: min-content;
+    
+        h2{ color: a.$primary-color;} 
+    
+        .footerNav {
+            font-size: 14px;
+            margin-top: 20px;
+    
+            ul li {
+                padding-bottom: .5rem;
+            }
+            
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    
+        .footer-icons { 
+            text-align: center;
+            h2{ 
+                font-size: 1rem;
+                margin-top: 1.2rem;
+            }
+            img {
+            width: 2rem;
+            height: 2rem;
+            margin: .5rem 1rem 1rem 0;
+            }
+        }
+    
+        form {
+            display: inline-flex;
+            margin-left: 0;
+    
+            #sub { 
+                width: 1.5rem;
+            }
+        }
+    
+        .form h2 {
+            padding: 2rem 0 .4rem 0;
+            font-size: 1rem;
+            text-align: left;
+        }
+    }
+    
+    
+    #copyright {
+        font-size: 12px;
+    }
+    
+    }
+
+
+
+@media screen and (min-width: 1200px) {
+footer {
+    background-color: #000;
+
+    h2{ color: a.$primary-color;}
+    
+   
+
+    .footerNav {
+        font-size: 16px;
+        margin-top: 20px;
+
+        ul li {
+            padding-bottom: .5rem;
+        }
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .footer-icons { 
+        text-align: center;
+        h2{ 
+            font-size: 20px;
+        }
+        img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem 1rem 1rem 0;
+    }
+    }
+
+    form {
+        display: inline-flex;
+
+        #sub { 
+            width: 1.5rem;
+        }
+    }
+
+    .form h2 {
+        padding: 2rem 0 .4rem 0;
+        font-size: 1rem;
+    }
+}
+
+
+#copyright {
+    font-size: 12px;
+}
+
+}

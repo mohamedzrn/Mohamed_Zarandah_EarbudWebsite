@@ -1,0 +1,144 @@
+@use '../abstracts' as a;
+
+
+.hero-text {
+    position: absolute;
+
+    h2{
+        color: a.$accent-color;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    h3{
+        display: none;
+        // font-weight: 500;
+        // font-size: .9rem;
+        // padding: 1rem 0 1rem 0;
+    }
+
+    .button {
+        background-color: a.$accent-color;
+        color: a.$primary-color;
+        font-size: .7rem;
+        text-align: center;
+        border:none ;
+        padding: .3rem;
+        // margin-left: 11rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.content {
+    font-size: 1rem;
+    h2{ 
+        margin-top: 2rem; 
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    li{
+        list-style-type: none;
+
+        img { 
+            max-width: 80%;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        margin: 5rem 0 0 4rem;
+
+        h2{
+            font-size:2rem;
+            font-weight: 800;
+        }
+
+        h3{
+            display: block;
+            font-weight: 500;
+            font-size: 1.2rem;
+            padding: 2rem 0 2rem 0;
+        }
+
+        .button {
+            background-color: a.$accent-color;
+            color: a.$primary-color;
+            font-size: 1.1rem;
+            text-align: center;
+            border:none ;
+            padding: .5rem;
+        }
+    }
+
+    .button:hover {
+        font-weight: 580;
+        color: a.$accent-color;
+        background-color: a.$primary-color;
+        border: solid .2rem a.$accent-color;
+    }
+
+    .content {
+        font-size: 20px;
+        h2{ 
+        margin-top: 2rem; 
+            text-align: center;
+        }
+        li{
+            list-style-type: none;
+
+            // img { 
+            //     max-width: none;
+            //     text-align: center;
+            // }
+
+            p{
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero-text {
+       
+        h2{
+            color: a.$accent-color;
+            font-size: 3rem;
+        }
+    
+        h3{
+            font-weight: 500;
+            font-size: 2rem;
+            padding: 2rem 0 2rem 0;
+        }
+    
+        .button {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .content {
+        font-size: 20px;
+
+        li{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    }

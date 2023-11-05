@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MHZ Earbuds</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> -->
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <title>YAJ Earbuds</title>
+  <body>
+
+    <h1 class="hidden">MHZ EARBUDS WEBSITE</h1>
+
+    <header class="grid-con">
+        <img class="m-col-start-1" src="images/LOGO.svg" alt="MHZ LOGO">
+        <nav class="col-end-5 m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13">
+            <h2 class="hidden">Main Navigation</h2>
+            <button id="button"></button>
+            <div id="burger-con">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">SPECS</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="index.html">INFO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-con">
+            <img class="col-span-full" src="images/renders6.jpg" alt="Main Image of MHZ Earbud">
+            <section class=" hero-text l-col-start-8 l-col-end-13"> 
+                <h2>M-usic<br> H-aven<br>Z-one</h2>
+                <button class="button">Explore</button>
+            </section>
+        </div>
+
+        <section class="grid-con content">
+            <h2 class="col-span-full">EVERYTHING YOU NEED</h2>
+            <li class="col-start-1 col-end-3 m-col-start-2 m-col-end-4">
+                <img src="images/book.svg" alt="image of User Manual">
+                <p>YAJ Earbuds</p>
+            </li>
+            <li class="col-start-3 col-end-5 m-col-start-4 m-col-end-6">
+                <img src="images/case1.svg" alt="image of User Manual">
+                <p>Capsule/ Case</p> 
+            </li> 
+            <li class="col-start-1 col-end-3 m-col-start-6 m-col-end-8">
+                <img src="images/book.svg" alt="image of User Manual">
+                <p>User Manual</p>
+            </li>   
+            <li class="col-start-3 col-end-5 m-col-start-8 m-col-end-10">
+                <img src="images/silicone-tips.svg" alt="image of silicone-tips">
+                <p>Silicone Tips</p>    
+            </li>      
+            <li class="col-start-2 col-end-4 m-col-start-10 m-col-end-12">
+                <img src="images/charger.svg" alt="image of typeC charger">
+                <p>Charging Cable</p>
+            </li>     
+        </section>
+
+        <div class="grid-con">
+            <section class="col-span-full">
+                <h2 class="hidden">X-Ray revealer</h2>
+                <div id="mobile-tablet-view">
+                    <img src="images/earbud-x-ray.jpg" alt="x-ray-earbuds">
+                    <img src="images/earbud.jpg" alt="Regular view of earbuds">
+                </div>
+                <div id="outerShell">
+                    <div id="imageCon">
+                        <!-- xray version -->
+                        <div class="slideImage image-right"></div>
+                        <!-- rendered version -->
+                        <div class="slideImage image-left"></div>
+                        <!-- drag bar -->
+                        <div class="slideImage image-drag"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="grid-con">
+            <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13">
+                <model-viewer id="model" src="model/Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+      
+                    <button class="Hotspot" slot="hotspot-1" data-position="-1.9153391647571412m 2.0582964302501705m 2.3620981446927938m" data-normal="-0.9961981765945044m -0.007490470061786555m -0.08679335117414319m" data-visibility-attribute="visible">
+                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
+                        <circle class="hover" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
+                        <circle class="hover" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
+                        <circle class="hover" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
+                        <path class="invincible" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
+                        <path class="invincible" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
+                        <circle class="invincible" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
+                      <div class="HotspotAnnotation" id="hotspot-1">
+                        <h1>CHARGER PORT</h1>
+                        <p>This is the charger port.</p>
+                      </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-2" data-position="-1.5298012326512647m 2.117530768424874m 2.313672442232526m" data-normal="0.8226791026800319m 0.010918731705838501m 0.568401157028655m" data-visibility-attribute="visible">
+                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
+                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
+                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
+                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
+                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
+                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
+                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
+                      <div class="HotspotAnnotation" id="hotspot-2">
+                          <h1>MULTI-FUNCTIONAL SENSOR</h1>
+                          <p>This sensor can measure temperature and humidity in a room. It also has an infrared sensor that detects objects or light sources.</p>
+                        </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-3" data-position="-1.5297992749556355m 1.6217074553183508m 2.320399606224346m" data-normal="0.8226774832814489m 0.01093040067712833m 0.5684032765939507m" data-visibility-attribute="visible">
+                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
+                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
+                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
+                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
+                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
+                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
+                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
+                        <div class="HotspotAnnotation" id="hotspot-3">
+                          <h1>Mic-2</h1>
+                          <p>This is the second microphone of the device. It can be used for voice assistants or other applications that require two microphones</p>
+                        </div>
+                    </button>
+                    
+                    <button class="Hotspot" slot="hotspot-4" data-position="-1.5395094614209557m 2.4892431526254906m 2.3190269882548633m" data-normal="0.8226775370430524m 0.010930401363935503m 0.5684031987689732m" data-visibility-attribute="visible">
+                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
+                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
+                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
+                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
+                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
+                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
+                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
+                      <div class="HotspotAnnotation" id="hotspot-4">
+                        <h1>Mic</h1>
+                        <p>This is the microphone of our device. It can be used for voice assistant integration or recording audio.</p>
+                      </div>
+                    </button>
+              
+                    <button class="Hotspot" slot="hotspot-5" data-position="-2.1724458208106388m 2.1678547078881447m 1.8647323295097002m" data-normal="-0.4520409808012486m 0.678042020281694m -0.5795843082835872m" data-visibility-attribute="visible">
+                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
+                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
+                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
+                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
+                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
+                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
+                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
+                      <div class="HotspotAnnotation" id="hotspot-5">
+                        <h1>MESH SPEAKER</h1>
+                        <p>This is a mesh speaker that can be used for listening to music or watching videos in comfort.</p>
+                      </div>
+                    </button>
+              
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <div id="ar-prompt">
+                        <img src="images/ar_hand_prompt.png">
+                    </div>
+                </model-viewer> 
+                  </div>
+                  </section>       
+    </main>
+
+    <footer class="grid-con">
+    
+    </footer>
+
+    <h3 class="col-span-full" id="copyright"> MHZ.ca 2023 &copy; All Rights Reserved</h3>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+ 
+  </body>
+</html>
