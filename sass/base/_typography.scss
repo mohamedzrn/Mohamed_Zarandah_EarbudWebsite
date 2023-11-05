@@ -1,0 +1,5 @@
+@use '../abstracts/variables' as v;
+
+body {
+    font-family: v.$body-font-family;
+}
