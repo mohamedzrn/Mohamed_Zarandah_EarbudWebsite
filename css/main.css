@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Montserrat;
+  font-family: segoe;
   font-weight: normal;
   font-style: normal;
-  src: url("../font/Montserrat-VariableFont_wght.ttf") format("ttf");
+  src: url("../font/segoe-ui.ttf") format("ttf");
 }
 body {
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "segoe", arial, sans-serif;
 }
 
 .invincible {
@@ -55,7 +55,7 @@ model-viewer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   color: #ca8326;
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 700;
   left: calc(100% + 1em);
@@ -252,32 +252,18 @@ footer .footerNav {
   margin-top: 0.8;
   margin-left: 3.9rem;
 }
+footer .footerNav ul {
+  display: inline-flex;
+  flex-direction: row;
+}
 footer .footerNav ul li {
   padding-bottom: 0.5rem;
+  padding-right: 10px;
   list-style-type: none;
 }
 footer .footerNav a {
   color: #fff;
   text-decoration: none;
-}
-footer .footer-icons {
-  text-align: center;
-}
-footer .footer-icons h2 {
-  font-size: 0.7rem;
-  margin-top: 2rem;
-}
-footer .footer-icons img {
-  width: 2rem;
-  height: 2rem;
-  margin: 0.5rem 0.5rem 0.5rem 0;
-}
-footer form {
-  display: inline-flex;
-  margin-left: 3rem;
-}
-footer form #sub {
-  width: 1.5rem;
 }
 footer .form h2 {
   padding: 1rem 0 0.4rem 0;
@@ -286,7 +272,7 @@ footer .form h2 {
 }
 
 #copyright {
-  color: #fff;
+  color: rgb(255, 179, 66);
   background-color: #131313;
   text-align: center;
   padding: 7px;
@@ -311,18 +297,6 @@ footer .form h2 {
   footer .footerNav a {
     color: #fff;
     text-decoration: none;
-  }
-  footer .footer-icons {
-    text-align: center;
-  }
-  footer .footer-icons h2 {
-    font-size: 1rem;
-    margin-top: 1.2rem;
-  }
-  footer .footer-icons img {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem 1rem 1rem 0;
   }
   footer form {
     display: inline-flex;
@@ -352,32 +326,18 @@ footer .form h2 {
     margin-top: 20px;
   }
   footer .footerNav ul li {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
   }
   footer .footerNav a {
     color: #fff;
     text-decoration: none;
   }
-  footer .footer-icons {
-    text-align: center;
-  }
-  footer .footer-icons h2 {
-    font-size: 20px;
-  }
-  footer .footer-icons img {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 1rem 1rem 1rem 0;
-  }
   footer form {
     display: inline-flex;
   }
-  footer form #sub {
-    width: 1.5rem;
-  }
   footer .form h2 {
     padding: 2rem 0 0.4rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #copyright {
     font-size: 12px;

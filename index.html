@@ -5,20 +5,17 @@
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> -->
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
-  <title>YAJ Earbuds</title>
+  <title>MHZ Earbuds</title>
   <body>
 
     <h1 class="hidden">MHZ EARBUDS WEBSITE</h1>
 
     <header class="grid-con">
         <img class="m-col-start-1" src="images/LOGO.svg" alt="MHZ LOGO">
-        <nav class="col-end-5 m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13">
+        <nav class="col-end-5 m-col-start-8 m-col-end-13 l-col-start-9 l-col-end-13">
             <h2 class="hidden">Main Navigation</h2>
             <button id="button"></button>
             <div id="burger-con">
@@ -45,11 +42,11 @@
             <h2 class="col-span-full">EVERYTHING YOU NEED</h2>
             <li class="col-start-1 col-end-3 m-col-start-2 m-col-end-4">
                 <img src="images/book.svg" alt="image of User Manual">
-                <p>YAJ Earbuds</p>
+                <p>MHZ Earbuds</p>
             </li>
             <li class="col-start-3 col-end-5 m-col-start-4 m-col-end-6">
                 <img src="images/case1.svg" alt="image of User Manual">
-                <p>Capsule/ Case</p> 
+                <p>Case</p> 
             </li> 
             <li class="col-start-1 col-end-3 m-col-start-6 m-col-end-8">
                 <img src="images/book.svg" alt="image of User Manual">
@@ -172,8 +169,28 @@
     </main>
 
     <footer class="grid-con">
-    
-    </footer>
+      <section class="form col-span-full m-col-start-2 m-col-end-7">
+          <h2>EMAIL PLEASE</h2>
+                  <form method="get" action="process.php">
+                      <label class="hidden">*Email</label>
+                      <input  id="mail" type="Email" required placeholder="Provide us your Email">
+                  </form>
+      </section>
+
+      <section class="footerNav col-start-1 col-end-5 l-col-start-9 l-col-end-12">
+          <h2 class="hidden">Footer Navigation</h2>
+          <nav>
+              <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">SPECS</a></li>
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">INFO</a></li>
+              </ul>
+          </nav>
+      </section>
+
+      
+  </footer>
 
     <h3 class="col-span-full" id="copyright"> MHZ.ca 2023 &copy; All Rights Reserved</h3>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
