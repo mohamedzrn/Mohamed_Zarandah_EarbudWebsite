@@ -4,50 +4,50 @@
     display: none;
 }
 
-@media screen  and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { 
 
     #mobile-tablet-view {
-        display: none;
-    }
-
-    #outerShell {
-        display: block;
-        max-width: 1200px;
-        border: solid 1px #666;
+    display: none;
+    }  
+  
+    #outerShell{
+      display: block;
+      max-width: 1200px;
+      margin: auto;
+      border: solid 2px #666;
     }
     
     #imageCon {
-        position: relative;
-        max-width: 1200px;
-        height: 100vh;
+      position: relative;
+      max-width: 1200px;
+      height: 90vh;
     }
-    
     .slideImage {
-        position: absolute;
-        left: 0;
+      position: absolute; /*images are stacked in order via absolute*/
+       left: 0;
         right: 0;
-        height: 100vh;
+      height: 90vh;
     }
     
     .image-right {
-        background: url(../images/earbud-x-ray.jpg) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
+      background: url(../images/earbud-x-ray.jpg) no-repeat;
+      background-size: cover;
+      // background-position: center center;
+      // background-attachment: fixed;
     }
     
     .image-left {
-        background: url(../images/earbud.jpg) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        width: 50%;
-        background-attachment: fixed;
+      background: url(../images/earbud.jpg) no-repeat;
+      width: 50%; /*start the image at the halfway point*/
+      background-size: cover;
+      // background-position: center center;
+      // background-attachment: fixed;
     }
     
     .image-drag {
-        background-color: #666;
-        left: 50%;
-        width: 4px;
-        cursor: pointer;
-    }   
-}
+      background-color: #666;
+      left: 50%; /*match up with image left*/
+      width: 6px; /*orig 49*/
+      cursor: pointer;
+    }
+  }
