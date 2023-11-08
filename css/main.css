@@ -2,7 +2,7 @@
   font-family: segoe;
   font-weight: normal;
   font-style: normal;
-  src: url("../font/segoe-ui.ttf") format("ttf");
+  src: url("../font/segoe-ui.ttf") format("ttf") url("../font/segoe-ui.woff2") format("woff2");
 }
 body {
   font-family: "segoe", arial, sans-serif;
@@ -354,36 +354,33 @@ footer .form h2 {
   #outerShell {
     display: block;
     max-width: 1200px;
-    border: solid 1px #666;
+    margin: auto;
+    border: solid 2px #666;
   }
   #imageCon {
     position: relative;
     max-width: 1200px;
-    height: 100vh;
+    height: 90vh;
   }
   .slideImage {
-    position: absolute;
+    position: absolute; /*images are stacked in order via absolute*/
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 90vh;
   }
   .image-right {
     background: url(../images/earbud-x-ray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-left {
     background: url(../images/earbud.jpg) no-repeat;
+    width: 50%; /*start the image at the halfway point*/
     background-size: cover;
-    background-position: center center;
-    width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
     background-color: #666;
-    left: 50%;
-    width: 4px;
+    left: 50%; /*match up with image left*/
+    width: 6px; /*orig 49*/
     cursor: pointer;
   }
 }
