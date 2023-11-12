@@ -21,7 +21,7 @@ nav {
     width: 45px;
     margin-top: 8px;
     transition: all 1 ease;
-    color: rgb(62, 131, 131);
+    color: rgb(131, 115, 62);
 }
 
 #burger-con{
@@ -98,6 +98,9 @@ nav {
 
 @media screen and (min-width: 1200px) {
 
+    #button {
+        display: none;
+    }
  
     #burger-con {
         display: block;
