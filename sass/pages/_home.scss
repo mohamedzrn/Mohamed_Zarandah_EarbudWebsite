@@ -56,7 +56,7 @@
         margin: 5rem 0 0 4rem;
 
         h2{
-            font-size:2rem;
+            font-size:2.5rem;
             font-weight: 800;
         }
 
@@ -99,6 +99,11 @@
         }
     }
 
+    #hero-img {
+        max-width: 150%;
+        padding-bottom: 1rem 0;
+    }
+
 
 }
 
@@ -108,7 +113,7 @@
        
         h2{
             color: a.$accent-color;
-            font-size: 3rem;
+            font-size: 5rem;
         }
     
         h3{
@@ -130,5 +135,10 @@
                 font-size: 18px;
             }
         }
+    }
+
+    #hero-img {
+        max-width: 120%;
+        padding-bottom: 1rem 0;
     }
     }

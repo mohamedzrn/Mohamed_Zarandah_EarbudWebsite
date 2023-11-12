@@ -431,7 +431,7 @@ footer .form h2 {
     margin: 5rem 0 0 4rem;
   }
   .hero-text h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
   }
   .hero-text h3 {
@@ -468,11 +468,15 @@ footer .form h2 {
     text-align: center;
     font-size: 14px;
   }
+  #hero-img {
+    max-width: 150%;
+    padding-bottom: 1rem 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-text h2 {
     color: #ab5500;
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .hero-text h3 {
     font-weight: 500;
@@ -487,5 +491,9 @@ footer .form h2 {
   }
   .content li p {
     font-size: 18px;
+  }
+  #hero-img {
+    max-width: 120%;
+    padding-bottom: 1rem 0;
   }
 }/*# sourceMappingURL=main.css.map */
