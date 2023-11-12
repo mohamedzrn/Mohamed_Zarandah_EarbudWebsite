@@ -8,6 +8,16 @@ body {
   font-family: "segoe", arial, sans-serif;
 }
 
+p {
+  color: #fff;
+  font-size: 34px;
+  line-height: 44px;
+}
+
+#animation p {
+  color: black;
+}
+
 .invincible {
   visibility: hidden;
   position: absolute;
@@ -170,7 +180,7 @@ nav {
   width: 45px;
   margin-top: 8px;
   transition: all 1 ease;
-  color: rgb(62, 131, 131);
+  color: rgb(131, 115, 62);
 }
 
 #burger-con {
@@ -231,6 +241,9 @@ nav {
   }
 }
 @media screen and (min-width: 1200px) {
+  #button {
+    display: none;
+  }
   #burger-con {
     display: block;
     margin-top: 1.5rem;
@@ -241,14 +254,14 @@ nav {
   }
 }
 footer {
-  background-color: #000;
+  background-color: #ffffff;
   grid-auto-rows: min-content;
 }
 footer h2 {
   color: #ffffff;
 }
 footer .footerNav {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 0.8;
   margin-left: 3.9rem;
 }
@@ -262,13 +275,8 @@ footer .footerNav ul li {
   list-style-type: none;
 }
 footer .footerNav a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
-}
-footer .form h2 {
-  padding: 1rem 0 0.4rem 0;
-  font-size: 0.9rem;
-  text-align: center;
 }
 
 #copyright {
@@ -281,34 +289,22 @@ footer .form h2 {
 
 @media screen and (min-width: 768px) {
   footer {
-    background-color: #000;
+    background-color: #ffffff;
     grid-auto-rows: min-content;
   }
   footer h2 {
     color: #ffffff;
   }
   footer .footerNav {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 20px;
   }
   footer .footerNav ul li {
     padding-bottom: 0.5rem;
   }
   footer .footerNav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-  }
-  footer form {
-    display: inline-flex;
-    margin-left: 0;
-  }
-  footer form #sub {
-    width: 1.5rem;
-  }
-  footer .form h2 {
-    padding: 2rem 0 0.4rem 0;
-    font-size: 1rem;
-    text-align: left;
   }
   #copyright {
     font-size: 12px;
@@ -316,28 +312,21 @@ footer .form h2 {
 }
 @media screen and (min-width: 1200px) {
   footer {
-    background-color: #000;
+    background-color: #fff;
   }
   footer h2 {
     color: #ffffff;
   }
   footer .footerNav {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
   }
   footer .footerNav ul li {
     padding-bottom: 1rem;
   }
   footer .footerNav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-  }
-  footer form {
-    display: inline-flex;
-  }
-  footer .form h2 {
-    padding: 2rem 0 0.4rem 0;
-    font-size: 1.2rem;
   }
   #copyright {
     font-size: 12px;
@@ -360,13 +349,13 @@ footer .form h2 {
   #imageCon {
     position: relative;
     max-width: 1200px;
-    height: 90vh;
+    height: 750px;
   }
   .slideImage {
     position: absolute; /*images are stacked in order via absolute*/
     left: 0;
     right: 0;
-    height: 90vh;
+    height: 750px;
   }
   .image-right {
     background: url(../images/earbud-x-ray.jpg) no-repeat;
