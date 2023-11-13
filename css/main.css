@@ -8,12 +8,6 @@ body {
   font-family: "segoe", arial, sans-serif;
 }
 
-p {
-  color: #fff;
-  font-size: 34px;
-  line-height: 44px;
-}
-
 #animation p {
   color: black;
 }
@@ -35,7 +29,7 @@ model-viewer {
   width: auto;
   max-width: 1200px;
   height: 700px;
-  background-color: #333333;
+  background-color: #fff;
   margin: 0 auto;
 }
 
@@ -296,7 +290,7 @@ footer .footerNav a {
     color: #ffffff;
   }
   footer .footerNav {
-    font-size: 18px;
+    font-size: 0.8rem;
     margin-top: 20px;
   }
   footer .footerNav ul li {
@@ -327,6 +321,7 @@ footer .footerNav a {
   footer .footerNav a {
     color: #000000;
     text-decoration: none;
+    font-size: 1rem;
   }
   #copyright {
     font-size: 12px;
@@ -413,6 +408,22 @@ footer .footerNav a {
   text-align: center;
   font-size: 14px;
   margin-bottom: 1rem;
+}
+
+#mdl-title {
+  padding-top: 6rem;
+}
+
+#mdl-desc {
+  padding-top: 1rem;
+}
+
+#xray-title {
+  padding-top: 5rem;
+}
+
+#xray-desc {
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {

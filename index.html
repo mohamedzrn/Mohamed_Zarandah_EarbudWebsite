@@ -1,6 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>MHZ Earbuds</title>
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
@@ -8,183 +9,78 @@
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
-  <title>MHZ Earbuds</title>
-  <body>
 
-    <h1 class="hidden">MHZ EARBUDS WEBSITE</h1>
+<header class="grid-con">
+    <a href="index.html">
+      <img src="images/LOGO.svg" class="col-start-1" alt="MHZ LOGO">
+    </a>
+  </header>
 
-    <header class="grid-con">
-      <a href="index.html">
-        <img src="images/LOGO.svg" class="col-start-1" alt="MHZ LOGO">
-      </a>
-        <nav class="m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13">
-            <h2 class="hidden">Main Navigation</h2>
-            <button id="button"></button>
+<body id="animation"> 
+    <div class="col-span-full">
+        <canvas class="m-col-start-1 m-col-end-13 l-col-start-1 l-col-end-12" id="explode-view"></canvas> 
+    </div>
+    <br>
+    <section class="grid-con content">
+      <h2 class=" col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Welcome to MHZ</h2>
+      <p class="col-span-full ">
+        MHZ (Music Haven Zone) is a brand of wireless earbuds that has gained popularity for its cutting-edge technology and commitment to delivering an immersive audio experience. These wireless earbuds are designed with a focus on providing high-quality sound, comfort, and convenience for users who seek a premium audio solution.
+      </p>
+      <br>
+      <p class="col-span-full">
+        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">High-Quality Audio:</h4>
+        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">MHZ earbuds are equipped with advanced audio technology to deliver crisp and clear sound. Whether you're listening to music, watching videos, or taking calls, the earbuds aim to provide an exceptional audio experience.</p>
+      </p>
+      <br>
+        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders.jpg" alt="pic1">
+      <p class="col-span-full">
+        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Wireless Connectivity:</h4>
+        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">True to their name, MHZ wireless earbuds offer the freedom of movement without the constraints of wires. They utilize Bluetooth technology to seamlessly connect to various devices, providing a hassle-free and tangle-free experience.</p>
+      </p>
+      <br>
+        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders2.jpg" alt="pic1">
+      <p class="col-span-full">
+        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Comfortable Design:</h4>
+        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">The earbuds are designed with user comfort in mind. They often come with multiple ear tip sizes to ensure a secure and comfortable fit for different users. The ergonomic design reduces fatigue during extended use.</p>
+      </p>
+      <br>
+        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders3.jpg" alt="pic1">
+      <p class="col-span-full">
+        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Long Battery Life:</h4>
+        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">MHZ earbuds typically feature long-lasting battery life, allowing users to enjoy their favorite music or podcasts throughout the day without constant recharging. The included charging case adds convenience for on-the-go use.</p>
+      </p>
+      <br>
+        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders4.jpg" alt="pic1">
+      <p class="col-span-full">
+        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Touch Controls:</h4>
+        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">Many MHZ earbuds come equipped with touch-sensitive controls, allowing users to manage music playback, answer calls, and activate voice assistants with a simple touch on the earbuds.</p>
+      </p>
+      <br>
+      <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders5.jpg" alt="pic1">
+      <p class="col-span-full">
+        <p class="col-span-full">As MHZ continues to innovate in the audio technology space, users can expect even more features and improvements in future iterations of their wireless earbuds, solidifying the brand as a go-to choice for those seeking a premium audio experience.</p>
+      </p>
+    </section>
+    
+                            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+
+<footer class="grid-con">
+    <section class="footerNav m-col-start-9 m-col-end-13 l-col-start-8 l-col-end-13">
+        <h2 class="hidden">Footer Navigation</h2>
+        <nav>
+            <ul>
+              <li><a href="index.html">BACK TO THE TOP</a></li>
+              <li><a href="animation.html">EXPLORE MORE</a></li>
+            </ul>
         </nav>
-    </header>
+    </section>
+</footer>
 
-    <main>
-        <div class="grid-con">
-            <img class="m-col-start-4 m-col-end-10 l-col-start-4 l-col-end-13" id="hero-img" src="images/renders6.jpg" alt="Main Image of MHZ Earbud">
-            <section class="hero-text"> 
-                <h2>
-                  M-usic<br>H-aven<br>Z-one
-                </h2>
-                <a href="animation.html">
-                  <button class="button">Explore</button>
-                </a>
-            </section>
-        </div>
+<h3 class="col-span-full" id="copyright"> MHZ.ca 2023 &copy; All Rights Reserved</h3>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
-        <section class="grid-con content">
-            <h2 class="col-span-full">EVERYTHING YOU NEED</h2>
-            <li class="m-col-start-3 m-col-end-6 l-col-start-2 l-col-end-4">
-                <img src="images/book.svg" alt="image of User Manual">
-                <p>MHZ Earbuds</p>
-            </li>
-            <li class="m-col-start-6 m-col-end-9 l-col-start-4 l-col-end-6">
-                <img src="images/case1.svg" alt="image of User Manual">
-                <p>Case</p> 
-            </li> 
-            <li class="m-col-start-9 m-col-end-12 l-col-start-6 l-col-end-8">
-                <img src="images/book.svg" alt="image of User Manual">
-                <p>User Manual</p>
-            </li>   
-            <li class="m-col-start-5 m-col-end-8 l-col-start-8 l-col-end-10">
-                <img src="images/silicone-tips.svg" alt="image of silicone-tips">
-                <p>Silicone Tips</p>    
-            </li>      
-            <li class="m-col-start-8 m-col-end-11 l-col-start-10 l-col-end-12">
-                <img src="images/charger.svg" alt="image of typeC charger">
-                <p>Charging Cable</p>
-            </li>     
-        </section>
-
-        <div class="grid-con">
-            <section class="col-span-full">
-                <h2 class="hidden">X-Ray revealer</h2>
-                <div id="mobile-tablet-view">
-                    <img src="images/earbud-x-ray.jpg" alt="x-ray-earbuds">
-                    <img src="images/earbud.jpg" alt="Regular view of earbuds">
-                </div>
-                <div id="outerShell">
-                    <div id="imageCon">
-                        <!-- xray version -->
-                        <div class="slideImage image-right"></div>
-                        <!-- rendered version -->
-                        <div class="slideImage image-left"></div>
-                        <!-- drag bar -->
-                        <div class="slideImage image-drag"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <section class="grid-con">
-            <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13">
-                <model-viewer id="model" src="model/Earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
-
-      
-                    <button class="Hotspot" slot="hotspot-1" data-position="-1.9153391647571412m 2.0582964302501705m 2.3620981446927938m" data-normal="-0.9961981765945044m -0.007490470061786555m -0.08679335117414319m" data-visibility-attribute="visible">
-                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
-                        <circle class="hover" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
-                        <circle class="hover" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
-                        <circle class="hover" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
-                        <path class="invincible" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
-                        <path class="invincible" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
-                        <circle class="invincible" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
-                      <div class="HotspotAnnotation" id="hotspot-1">
-                        <h1>CHARGER PORT</h1>
-                        <p>This is the charger port.</p>
-                      </div>
-                    </button>
-                    
-                    <button class="Hotspot" slot="hotspot-2" data-position="-1.5298012326512647m 2.117530768424874m 2.313672442232526m" data-normal="0.8226791026800319m 0.010918731705838501m 0.568401157028655m" data-visibility-attribute="visible">
-                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
-                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
-                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
-                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
-                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
-                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
-                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
-                      <div class="HotspotAnnotation" id="hotspot-2">
-                          <h1>MULTI-FUNCTIONAL SENSOR</h1>
-                          <p>This sensor can measure temperature and humidity in a room. It also has an infrared sensor that detects objects or light sources.</p>
-                        </div>
-                    </button>
-                    
-                    <button class="Hotspot" slot="hotspot-3" data-position="-1.5297992749556355m 1.6217074553183508m 2.320399606224346m" data-normal="0.8226774832814489m 0.01093040067712833m 0.5684032765939507m" data-visibility-attribute="visible">
-                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
-                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
-                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
-                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
-                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
-                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
-                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
-                        <div class="HotspotAnnotation" id="hotspot-3">
-                          <h1>Mic-2</h1>
-                          <p>This is the second microphone of the device. It can be used for voice assistants or other applications that require two microphones</p>
-                        </div>
-                    </button>
-                    
-                    <button class="Hotspot" slot="hotspot-4" data-position="-1.5395094614209557m 2.4892431526254906m 2.3190269882548633m" data-normal="0.8226775370430524m 0.010930401363935503m 0.5684031987689732m" data-visibility-attribute="visible">
-                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
-                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
-                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
-                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
-                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
-                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
-                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
-                      <div class="HotspotAnnotation" id="hotspot-4">
-                        <h1>Mic</h1>
-                        <p>This is the microphone of our device. It can be used for voice assistant integration or recording audio.</p>
-                      </div>
-                    </button>
-              
-                    <button class="Hotspot" slot="hotspot-5" data-position="-2.1724458208106388m 2.1678547078881447m 1.8647323295097002m" data-normal="-0.4520409808012486m 0.678042020281694m -0.5795843082835872m" data-visibility-attribute="visible">
-                      <svg version="1.1" inkscape:version="0.91 r13725"  x="0px" y="0px" xmlns viewBox="0 0 291.43 291.43"><style type="text/css"></style>
-                        <circle class="hover circle1" cx="145.71" cy="145.71" r="10" fill="#ab5500" stroke-width="0"/>
-                        <circle class="hover circle2" cx="145.71" cy="145.71" r="10" fill="#d16300" stroke-width="0"/>
-                        <circle class="hover circle3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/>
-                        <path class="invincible path1" d="m145.71,291.43C65.37,291.43,0,226.06,0,145.71S65.37,0,145.71,0s145.71,65.37,145.71,145.71-65.37,145.71-145.71,145.71Zm0-271.43c-69.32,0-125.71,56.4-125.71,125.71s56.4,125.71,125.71,125.71,125.71-56.39,125.71-125.71S215.03,20,145.71,20Z" fill="#ab5500" stroke-width="0"/>
-                        <path class="invincible path2" d="m145.71,241.19c-52.64,0-95.47-42.83-95.47-95.47s42.83-95.47,95.47-95.47,95.47,42.83,95.47,95.47-42.83,95.47-95.47,95.47Zm0-170.94c-41.61,0-75.47,33.86-75.47,75.47s33.86,75.47,75.47,75.47,75.47-33.86,75.47-75.47-33.86-75.47-75.47-75.47Z" fill="#d16300" stroke-width="0"/>
-                        <circle class="invincible path3" cx="145.71" cy="145.71" r="54.35" fill="#dd8c43" stroke-width="0"/></svg>
-                      <div class="HotspotAnnotation" id="hotspot-5">
-                        <h1>MESH SPEAKER</h1>
-                        <p>This is a mesh speaker that can be used for listening to music or watching videos in comfort.</p>
-                      </div>
-                    </button>
-              
-                    <button slot="ar-button" id="ar-button">
-                        View in your space
-                    </button>
-                    <div id="ar-prompt">
-                        <img src="images/ar_hand_prompt.png">
-                    </div>
-                </model-viewer> 
-                  </div>
-                  </section>       
-    </main>
-
-    <footer class="grid-con">
-      <section class="footerNav m-col-start-3 m-col-end-13 l-col-start-5 l-col-end-12">
-          <h2 class="hidden">Footer Navigation</h2>
-          <nav>
-              <ul>
-                <li><a href="#">BACK TO ANIMATION</a></li>
-                <li><a href="index.html">HOME</a></li>
-              </ul>
-          </nav>
-      </section>
-
-      
-  </footer>
-
-    <h3 class="col-span-full" id="copyright"> MHZ.ca 2023 &copy; All Rights Reserved</h3>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
-    <script src="js/main.js"></script>
- 
-  </body>
 </html>
