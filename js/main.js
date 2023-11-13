@@ -58,6 +58,7 @@
 
 
 })();
+
 //for the modelviewer
 (() => {
 
@@ -66,10 +67,31 @@
   
     const infoBoxes = [
       { 
-        title: "Noise-cancelling microphones",
-        text: "Noise-cancelling microphones and a rear copper shield are optimally placed to quickly detect outside noises, working together to counter noise before it disturbs your experience",
+        title: "CHARGER PORT",
+        text: "This is the charger port.",
+        image: "images/copperinsulation.jpg"
+      },
+      { 
+        title: "MULTI-FUNCTIONAL SENSOR",
+        text: "This sensor can measure temperature and humidity in a room. It also has an infrared sensor that detects objects or light sources.",
+        image: "images/copperinsulation.jpg"
+      },
+      { 
+        title: "Mic-2",
+        text: "This is the second microphone of the device. It can be used for voice assistants or other applications that require two microphones.",
+        image: "images/copperinsulation.jpg"
+      },
+      { 
+        title: "Mic",
+        text: "This is the microphone of our device. It can be used for voice assistant integration or recording audio.",
+        image: "images/copperinsulation.jpg"
+      },
+      { 
+        title: "MESH SPEAKER",
+        text: "This is a mesh speaker that can be used for listening to music or watching videos in comfort.",
         image: "images/copperinsulation.jpg"
       }
+      
     ];
   
     function modelLoaded() {
@@ -78,14 +100,24 @@
       });
     }
   
-    function loadInfo() {
+    function LoadInfo() {
       infoBoxes.forEach((infoBox, index)=>{
+
         let selected = document.querySelector(`#hotspot-${index+1}`);
+          h2 = document.createElement('h2');
+          h2.textContent = infoBox.title
+          p = document.createElement("p");
+          p.textContent = infoBox.text;
         console.log(selected);
         console.log(infoBox.title);
         console.log(infoBox.text);
+
+        selected.appendChild(h2);
+        selected.appendChild(p);
       })  
     }
+
+    LoadInfo();
   
     function showInfo() {
       let selected = document.querySelector(`#${this.slot}`);
@@ -93,7 +125,7 @@
     }
   
     function hideInfo() {
-      let selected = document.querySelector(`#${this.slot}`);
+      let selected = document.querySelectorAll(`#${this.slot}`);
       gsap.to(selected, 1, { autoAlpha: 0 });
     }
   
@@ -105,30 +137,30 @@
     });
   
   
-    var tl = new TimelineMax({ delay: 0.3 });
+    // var tl = new TimelineMax({ delay: 0.3 });
   
-    MorphSVGPlugin.convertToPath("circle");
+    // MorphSVGPlugin.convertToPath("circle");
   
-    let circles = document.querySelectorAll(".hover");
+    // let circles = document.querySelectorAll(".hover");
   
-    function hover() {
-      tl.play();
-      tl.to(".circle1", 0.2, { morphSVG: ".path1" });
-      tl.to(".circle2", 0.2, { morphSVG: ".path2" });
-      tl.to(".circle3", 0.2, { morphSVG: ".path3" });
-    }
+    // function hover() {
+    //   tl.play();
+    //   tl.to(".circle1", 0.2, { morphSVG: ".path1" });
+    //   tl.to(".circle2", 0.2, { morphSVG: ".path2" });
+    //   tl.to(".circle3", 0.2, { morphSVG: ".path3" });
+    // }
   
-    function hide() {
-      tl.to(".hover", 0.6, { morphSVG: "circle" });
-      tl.to(".hover", 0.6, { morphSVG: "circle" });
-      tl.to(".hover", 0.6, { morphSVG: "circle" });
-      tl.seek(0);
-      tl.pause();
-    }
+    // function hide() {
+    //   tl.to(".hover", 0.6, { morphSVG: "circle" });
+    //   tl.to(".hover", 0.6, { morphSVG: "circle" });
+    //   tl.to(".hover", 0.6, { morphSVG: "circle" });
+    //   tl.seek(0);
+    //   tl.pause();
+    // }
   
-    circles.forEach(function (circle) {
-      circle.addEventListener("mouseover", hover);
-      circle.addEventListener("mouseout", hide);
-    });
+    // circles.forEach(function (circle) {
+    //   circle.addEventListener("mouseover", hover);
+    //   circle.addEventListener("mouseout", hide);
+    // });
   })();
   
