@@ -1,86 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>MHZ Earbuds</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/grid.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
+  <title>MHZ Earbuds — Premium Wireless Audio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+</head>
 
-<header class="grid-con">
-    <a href="index.html">
-      <img src="images/LOGO.svg" class="col-start-1" alt="MHZ LOGO">
-    </a>
-  </header>
+<header>
+  <a href="index.html">
+    <img src="images/LOGO.svg" class="logo-img" alt="MHZ Logo">
+  </a>
+  <div id="burger-con">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="animation.html">Experience</a></li>
+    </ul>
+  </div>
+  <button id="button" aria-label="Menu">☰</button>
+</header>
 
-<body id="animation"> 
-    <div class="col-span-full">
-        <canvas class="m-col-start-1 m-col-end-13 l-col-start-1 l-col-end-12" id="explode-view"></canvas> 
+<body id="animation">
+
+  <!-- Hero canvas (GSAP scroll animation) -->
+  <div style="background:var(--bg2);min-height:calc(100vh - var(--nav-h));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,0.08) 0%,transparent 70%);pointer-events:none;"></div>
+    <canvas id="explode-view" style="max-width:100%;max-height:70vh;position:relative;z-index:1;"></canvas>
+    <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);text-align:center;">
+      <p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Scroll to explore</p>
+      <div style="width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);margin:8px auto 0;"></div>
     </div>
-    <br>
-    <section class="grid-con content">
-      <h2 class=" col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Welcome to MHZ</h2>
-      <p class="col-span-full ">
-        MHZ (Music Haven Zone) is a brand of wireless earbuds that has gained popularity for its cutting-edge technology and commitment to delivering an immersive audio experience. These wireless earbuds are designed with a focus on providing high-quality sound, comfort, and convenience for users who seek a premium audio solution.
-      </p>
-      <br>
-      <p class="col-span-full">
-        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">High-Quality Audio:</h4>
-        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">MHZ earbuds are equipped with advanced audio technology to deliver crisp and clear sound. Whether you're listening to music, watching videos, or taking calls, the earbuds aim to provide an exceptional audio experience.</p>
-      </p>
-      <br>
-        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders.jpg" alt="pic1">
-      <p class="col-span-full">
-        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Wireless Connectivity:</h4>
-        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">True to their name, MHZ wireless earbuds offer the freedom of movement without the constraints of wires. They utilize Bluetooth technology to seamlessly connect to various devices, providing a hassle-free and tangle-free experience.</p>
-      </p>
-      <br>
-        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders2.jpg" alt="pic1">
-      <p class="col-span-full">
-        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Comfortable Design:</h4>
-        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">The earbuds are designed with user comfort in mind. They often come with multiple ear tip sizes to ensure a secure and comfortable fit for different users. The ergonomic design reduces fatigue during extended use.</p>
-      </p>
-      <br>
-        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders3.jpg" alt="pic1">
-      <p class="col-span-full">
-        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Long Battery Life:</h4>
-        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">MHZ earbuds typically feature long-lasting battery life, allowing users to enjoy their favorite music or podcasts throughout the day without constant recharging. The included charging case adds convenience for on-the-go use.</p>
-      </p>
-      <br>
-        <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders4.jpg" alt="pic1">
-      <p class="col-span-full">
-        <h4 class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-4">Touch Controls:</h4>
-        <p class="col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6">Many MHZ earbuds come equipped with touch-sensitive controls, allowing users to manage music playback, answer calls, and activate voice assistants with a simple touch on the earbuds.</p>
-      </p>
-      <br>
-      <img class="col-span-full m-col-start-3 m-col-end-6 l-col-start-8 l-col-end-13" src="images/renders5.jpg" alt="pic1">
-      <p class="col-span-full">
-        <p class="col-span-full">As MHZ continues to innovate in the audio technology space, users can expect even more features and improvements in future iterations of their wireless earbuds, solidifying the brand as a go-to choice for those seeking a premium audio experience.</p>
-      </p>
-    </section>
-    
-                            
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
-    <script src="js/animation.js"></script>
+  </div>
+
+  <!-- Features strip -->
+  <div class="features-strip">
+    <div class="features-strip-inner">
+      <div class="feature-pill">
+        <div class="feature-pill-icon">🎵</div>
+        <h4>Hi-Fi Sound</h4>
+        <p>Studio-grade audio quality</p>
+      </div>
+      <div class="feature-pill">
+        <div class="feature-pill-icon">📶</div>
+        <h4>Bluetooth 5.3</h4>
+        <p>Instant, stable pairing</p>
+      </div>
+      <div class="feature-pill">
+        <div class="feature-pill-icon">⚡</div>
+        <h4>30hr Battery</h4>
+        <p>All-day listening + case</p>
+      </div>
+      <div class="feature-pill">
+        <div class="feature-pill-icon">🎙️</div>
+        <h4>ANC + Mic</h4>
+        <p>Active noise cancellation</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome section -->
+  <section style="background:var(--bg2)">
+    <div class="welcome-section">
+      <div>
+        <div class="section-tag">Welcome to MHZ</div>
+        <h2 style="margin-top:12px">Music Haven<br><em>Zone</em></h2>
+        <p>MHZ (Music Haven Zone) is a brand of premium wireless earbuds engineered for audiophiles who demand the best. Cutting-edge technology meets refined craftsmanship for an immersive audio experience unlike any other.</p>
+        <p>Every detail — from the acoustic chamber design to the skin-like silicone finish — is purpose-built to deliver exceptional comfort and performance.</p>
+        <a href="animation.html" class="button" style="margin-top:12px;display:inline-flex;align-items:center;gap:8px">Explore the Experience →</a>
+      </div>
+      <div>
+        <img src="images/renders.jpg" alt="MHZ Earbuds" style="border-radius:var(--radius-xl);border:1px solid var(--border);width:100%;object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature list -->
+  <section style="background:var(--bg)">
+    <div class="section-header">
+      <div class="section-tag">Features</div>
+      <h2 style="font-family:'Playfair Display',serif;margin-top:10px">Engineered for excellence</h2>
+      <p>Every feature crafted to elevate your listening experience.</p>
+    </div>
+
+    <div class="content" style="padding-top:0">
+
+      <!-- Feature 1 -->
+      <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <div class="section-tag">01</div>
+        <h4>High-Quality Audio</h4>
+        <h2 style="font-size:clamp(1.5rem,2vw,2rem);margin-bottom:0">Crystal-clear sound in every frequency</h2>
+        <p>MHZ earbuds feature precision-tuned 10mm dynamic drivers with an extended frequency response of 20Hz–40kHz. Whether you're catching the deepest bass or the most delicate highs, every note is reproduced faithfully.</p>
+      </div>
+      <div>
+        <img src="images/renders.jpg" alt="Audio quality" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--border);">
+      </div>
+
+      <!-- Feature 2 -->
+      <div>
+        <img src="images/renders2.jpg" alt="Wireless connectivity" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--border);">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <div class="section-tag">02</div>
+        <h4>Wireless Connectivity</h4>
+        <h2 style="font-size:clamp(1.5rem,2vw,2rem);margin-bottom:0">True wireless. Zero compromise.</h2>
+        <p>Bluetooth 5.3 delivers an instant, rock-solid connection with a range of up to 30 meters. Multi-device pairing means seamlessly switching between your phone, laptop, and tablet — without missing a beat.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <div class="section-tag">03</div>
+        <h4>Comfortable Design</h4>
+        <h2 style="font-size:clamp(1.5rem,2vw,2rem);margin-bottom:0">Wear them all day</h2>
+        <p>Ergonomically shaped with memory foam ear tips in three sizes, MHZ earbuds conform to your ear canal for a secure, fatigue-free fit. Weighing just 5g each, you'll forget you're wearing them.</p>
+      </div>
+      <div>
+        <img src="images/renders3.jpg" alt="Comfortable design" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--border);">
+      </div>
+
+      <!-- Feature 4 -->
+      <div>
+        <img src="images/renders4.jpg" alt="Battery life" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--border);">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <div class="section-tag">04</div>
+        <h4>Long Battery Life</h4>
+        <h2 style="font-size:clamp(1.5rem,2vw,2rem);margin-bottom:0">30 hours of playtime</h2>
+        <p>8 hours per charge plus a 22-hour charging case. With 10-minute quick charge giving you 2 hours of playback, you'll never be left in silence. IPX5 sweat resistance means they move with your life.</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <div class="section-tag">05</div>
+        <h4>Touch Controls</h4>
+        <h2 style="font-size:clamp(1.5rem,2vw,2rem);margin-bottom:0">Control at your fingertips</h2>
+        <p>Capacitive touch sensors respond to single, double, and triple taps for seamless control of playback, calls, ANC, and voice assistant activation. No fumbling, no buttons — just intuitive gestures.</p>
+      </div>
+      <div>
+        <img src="images/renders5.jpg" alt="Touch controls" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:1px solid var(--border);">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--bg2);border-top:1px solid var(--border);text-align:center;padding:80px 48px;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,0.08) 0%,transparent 70%);pointer-events:none;"></div>
+    <div class="section-tag" style="position:relative">Experience More</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,3vw,2.75rem);margin:12px 0 16px;position:relative">See the MHZ in 3D</h2>
+    <p style="max-width:480px;margin:0 auto 32px;position:relative">Explore every detail of the MHZ earbud in our interactive 3D viewer — rotate, zoom, and discover the engineering inside.</p>
+    <a href="animation.html" class="button" style="display:inline-flex;align-items:center;gap:8px;position:relative">Explore 3D Experience →</a>
+  </section>
+
 </body>
 
 <footer class="grid-con">
-    <section class="footerNav m-col-start-9 m-col-end-13 l-col-start-8 l-col-end-13">
-        <h2 class="hidden">Footer Navigation</h2>
-        <nav>
-            <ul>
-              <li><a href="index.html">BACK TO THE TOP</a></li>
-              <li><a href="animation.html">EXPLORE MORE</a></li>
-            </ul>
-        </nav>
-    </section>
+  <section class="footerNav">
+    <h2 class="hidden">Footer Navigation</h2>
+    <nav>
+      <ul>
+        <li><a href="#">MHZ.ca</a></li>
+        <li><a href="animation.html">Explore More</a></li>
+        <li><a href="index.html">Back to Top</a></li>
+      </ul>
+    </nav>
+  </section>
 </footer>
+<h3 id="copyright">MHZ.ca 2024 &copy; All Rights Reserved</h3>
 
-<h3 class="col-span-full" id="copyright"> MHZ.ca 2023 &copy; All Rights Reserved</h3>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/animation.js"></script>
+<script>
+const btn = document.getElementById('button');
+const nav = document.getElementById('burger-con');
+if(btn&&nav) btn.addEventListener('click',()=>nav.classList.toggle('slide-toggle'));
+</script>
 </html>
