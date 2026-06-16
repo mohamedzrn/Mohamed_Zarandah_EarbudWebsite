@@ -23,10 +23,10 @@
 <body id="animation">
 
   <!-- Hero canvas (GSAP scroll animation) -->
-  <div style="background:var(--bg2);min-height:calc(100vh - var(--nav-h));display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,0.08) 0%,transparent 70%);pointer-events:none;"></div>
-    <canvas id="explode-view" style="max-width:100%;max-height:70vh;position:relative;z-index:1;"></canvas>
-    <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);text-align:center;">
+  <div id="hero-container">
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,169,110,0.08) 0%,transparent 70%);pointer-events:none;z-index:0;"></div>
+    <canvas id="explode-view"></canvas>
+    <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);text-align:center;z-index:2;">
       <p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);">Scroll to explore</p>
       <div style="width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);margin:8px auto 0;"></div>
     </div>

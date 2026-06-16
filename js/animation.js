@@ -28,8 +28,8 @@
         frame: 289,
         snap: "frame",
         scrollTrigger: {
-            trigger: "#explode-view",
-            pin: true,
+            trigger: "#hero-container",
+            pin: "#hero-container",
             scrub: .000000000001,
             start: "top top"
         },
